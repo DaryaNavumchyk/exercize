@@ -16,6 +16,6 @@ list2 = ['a', 'b', 'c']
 #    print(x)
 
 
-#import itertools
-#print(list(itertools.chain(*zip(list1, list2))))
+import itertools
+print(list(itertools.chain(*zip(list1, list2))))
 
