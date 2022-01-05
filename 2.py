@@ -8,10 +8,20 @@
 
 
 
-fibonacci1 = fibonacci2 = 1
-print(fibonacci1, fibonacci2, end=' ')
+#fibonacci1 = fibonacci2 = 1
+#print(fibonacci1, fibonacci2, end=' ')
  
+#for i in range(100):
+#    fibonacci1, fibonacci2 = fibonacci2, fibonacci1 + fibonacci2
+#    print(fibonacci2, end=' ')
+ 
+ 
+ def fibonacci(n):
+     
+    if (n <= 1):
+        return n
+    else:
+        return (fibonacci(n-1) + fibonacci(n-2))
+
 for i in range(100):
-    fibonacci1, fibonacci2 = fibonacci2, fibonacci1 + fibonacci2
-    print(fibonacci2, end=' ')
- 
+    print(fibonacci(i))
