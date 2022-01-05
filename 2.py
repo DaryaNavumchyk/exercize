@@ -27,13 +27,12 @@
 #    print(fibonacci(i))
 
   
-  def fibonacci(n):
+def fibonacci(n):
     
-    a, b = 1, 1
+    a, b = 1, 0
     for i in range(n):
         a, b = b, a + b
     return a
 
 
-for i in range(10):
-    print(fibonacci(i))
+print(fibonacci(10))
